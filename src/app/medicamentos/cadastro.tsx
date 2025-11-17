@@ -1,4 +1,4 @@
-// components/MedicationForm.js
+
 import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
@@ -10,7 +10,7 @@ import {
   ScrollView,
 } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import styles from './styles'; // Ajuste o caminho se seu styles.js estiver em outro lugar
+import styles from './styles'; 
 import { Link, useRouter, useLocalSearchParams } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons'
 
@@ -35,7 +35,7 @@ const MedicationForm = () => {
         setEditingTomado(!!editar.tomado);
         setMedicationName(editar.nome ?? '');
         setDosage(editar.dosagem ?? '');
-        // frequency/time não existem no item, deixamos como estão ou vazio
+       
       } catch (e) {
         console.warn('Falha ao carregar item para edição:', e);
       }
@@ -70,7 +70,7 @@ const MedicationForm = () => {
     const formattedTime = selectedTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
     if (editingId) {
-      // Atualização
+     
       const editado = {
         id: editingId,
         nome: medicationName,
@@ -92,7 +92,7 @@ const MedicationForm = () => {
     console.log('Dados do Medicamento:', formData);
     Alert.alert('Sucesso!', `Medicamento ${medicationName} agendado para ${formattedTime}.`);
 
-    // Navegar para a listagem levando o novo item
+   
     const novoItem = {
       id: Date.now().toString(),
       nome: medicationName,
