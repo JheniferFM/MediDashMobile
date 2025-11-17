@@ -1,0 +1,117 @@
+// styles.js
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    paddingTop: 60,
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    color: '#0D47A1',
+    marginBottom: 5,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#666',
+    marginBottom: 30,
+    textAlign: 'center',
+  },
+  menuContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    width: '90%',
+  },
+  menuItem: {
+    width: '40%',
+    height: 120,
+    backgroundColor: '#E3F2FD',
+    borderRadius: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: 10,
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 2 },
+  },
+  menuLabel: {
+    marginTop: 10,
+    fontSize: 14,
+    color: '#333',
+    fontWeight: '600',
+    textAlign: 'center', // Adicionado para centralizar o texto
+  },
+  linkText: {
+    marginTop: 25,
+    color: '#0D47A1',
+    fontWeight: 'bold',
+  },
+  // NOVOS ESTILOS PARA O FORMULÁRIO
+  formGroup: {
+    width: '100%',
+    marginBottom: 20,
+  },
+  label: {
+    fontSize: 16,
+    color: '#333',
+    marginBottom: 8,
+    fontWeight: '600',
+  },
+  input: {
+    width: '100%',
+    height: 50,
+    backgroundColor: '#E3F2FD',
+    borderRadius: 10,
+    paddingHorizontal: 15,
+    fontSize: 16,
+    color: '#333',
+    borderWidth: 1,
+    borderColor: '#90CAF9',
+  },
+  timePickerButton: {
+    width: '100%',
+    height: 50,
+    backgroundColor: '#90CAF9',
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 10,
+  },
+  timePickerButtonText: {
+    fontSize: 16,
+    color: '#0D47A1',
+    fontWeight: 'bold',
+  },
+  selectedTimeText: {
+    fontSize: 16,
+    color: '#333',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  submitButton: {
+    width: '100%',
+    height: 55,
+    backgroundColor: '#0D47A1',
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 3 },
+  },
+  submitButtonText: {
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+});
