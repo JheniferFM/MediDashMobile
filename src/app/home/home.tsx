@@ -1,8 +1,8 @@
-// app/index.js
+
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { Link } from "expo-router"; // Importe o Link do expo-router
-import styles from "./style"; // Ajuste o caminho para seus estilos
+import { Link } from "expo-router"; 
+import styles from "./style"; 
 
 export default function Home() {
  return(
